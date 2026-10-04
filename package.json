@@ -1,0 +1,19 @@
+{
+  "name": "mastermind-backend",
+  "version": "1.0.0",
+  "description": "Mastermind 重复颜色反馈与候选推理后端（TypeScript + Node.js + SQLite，仅 API 与 CLI）",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:test": "tsc -p tsconfig.test.json",
+    "test": "npm run build:test && node --test --test-reporter=spec \"dist-test/test/*.test.js\"",
+    "start": "node dist/server/server.js",
+    "demo": "node dist/server/demo.js",
+    "cli": "node dist/server/cli.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.9.0"
+  }
+}
